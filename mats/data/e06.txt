@@ -1,0 +1,205 @@
+$MSG_TYPE = TH11_ENDING_MSG
+
+function proc0{
+	load_anm(0, "e06.anm");
+	set_background_image(0, 0, 0);
+	play_bgm("bgm/th10_13.wav");
+	set_text_color(#404060);
+	print("　　博麗神社。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　幻想郷の東の境に位置する神社である。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　妖怪の山に少し後れて、神社の木々も紅く色付いていた。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　紅葉が始まればやる事は一つ。");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 1);
+	set_text_color(#a04040);
+	print("文　　「偶には山の麓で紅葉を楽しむのも良い物ね」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#804040);
+	print("霊夢　「あんたはしょっちゅう麓に降りてきてるでしょ？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「まあ、折角人間の方から宴会に誘ってくれてるんだ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　珍しいから愉しまないと」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("文　　「そういえば、何で急に宴会に誘ったりしたのかしら？」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#804040);
+	print("霊夢　「紅葉が綺麗だからよ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　それに山の妖怪達であるあんたらと、");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　山の神様も交流して欲しいから」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 2);
+	set_text_color(#804040);
+	print("霊夢　「この神様達も悪い神様じゃないのよ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　だから山で争い事とか始めないで欲しいなぁと」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("早苗　「悪い神様ではございません」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("神奈子「悪い神じゃないよ」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("文　　「胡散臭いね」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#a04040);
+	print("神奈子「私は、あらゆる物への信仰心を復活させようと考えている");
+	print("　　　　のです。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　信仰とは、即ちそこに物がある事を敬い、");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　自分に罰が返ってこない様に畏れ、");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　生命、精神、物体全てを豊かにする心です」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#a04040);
+	print("神奈子「――って、そんなに堅苦しいもんじゃ無いのよねぇ」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("文　　「！？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("神奈子「信仰って言っても、こうやって一緒にお酒を呑むに");
+	print("　　　　足りる信頼と、何一つ変わらないのよ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　ほら、良く神社にお酒をお供えするでしょう？」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#804040);
+	print("霊夢　「ま、そんな感じでフランクな神様なんで");
+	print("　　　　たまにお酒でも誘ってやってよ」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("文　　「……あははは。天狗に『お酒に誘ってやって』ですって？");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　言われなくても誘うわよ。神様を潰すくらいに……");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　というか、毎日の様に誘っても面白いかもね」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#a04040);
+	print("神奈子「あらお強いのね。残念ながら私も強いの。神懸かり的に」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("早苗　「わ、私は、ほんの気持ち程度飲めれば……」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("文　　「気持ちって、一升かい？　それとも一斗？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「もろきゅう大量に用意しないとなぁ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　最近、ピクルスも始めてみたの、アレもお酒に最適よ」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#404060);
+	print("　　何故か、山に住む妖怪はお酒に強い。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　荒々しい性格の者が多く、呑めない妖怪は、次第に山を追いや");
+	print("　　られていったのか、それとも――");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　河童や天狗の高度な文明を持った社会は、お酒を呑まないと");
+	print("　　社会がストレスで潤滑に動かないのか。");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	print("　　ともかく、そこに一人、人間の早苗が混ざるのは少々不憫に");
+	print("　　思えて仕方がなかった。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　");
+	set_text_color(#308000);
+	print("　　Ending　No.01　　信仰は神様との友達感覚の付き合い？");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　　オールクリアおめでとう！　流石だね！");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	unknown11();
+	sleep(60);
+
+	unknown14(60);
+	sleep(60);
+
+	call_staffroll("staff.msg");
+}

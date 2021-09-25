@@ -1,0 +1,56 @@
+$MSG_TYPE = TH11_ENDING_MSG
+
+function proc0{
+	load_anm(0, "e00.anm");
+	set_background_image(0, 0, 0);
+	play_bgm("bgm/th10_13.wav");
+	set_text_color(#404060);
+	print("　　朝方の博麗神社。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　結局、神様に力でねじ伏せられてしまった霊夢は");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　天狗達に後ろ指指されながら寂しく戻ってきた。");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 1);
+	set_text_color(#804040);
+	print("霊夢「あー悔しいったらありゃしない。");
+	print("　　　このままじゃ、うちの神社を乗っ取られてしまうわ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　今すぐ出発しないと……」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#404060);
+	print("　　霊夢は、すぐに再戦の支度をすると寝ないで出発した。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　睡眠不足は弾幕の最大の敵だと言うのに……");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　");
+	print("　　Ending　No.07　　睡眠不足じゃありませんか？");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#308000);
+	print("　　ノーマル以上でノーコンティニュークリアを目指そう！");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	unknown11();
+	sleep(60);
+
+	unknown14(60);
+	sleep(60);
+
+}

@@ -1,0 +1,63 @@
+$MSG_TYPE = TH11_ENDING_MSG
+
+function proc0{
+	load_anm(0, "e04.anm");
+	set_background_image(0, 0, 0);
+	play_bgm("bgm/th10_13.wav");
+	set_text_color(#404060);
+	print("　　翌朝の博麗神社。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　結局、神様の力には全く歯が立たなかった魔理沙は");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　何も知らない迷い人の振りをして山を下りてきた。");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 1);
+	set_text_color(#804040);
+	print("霊夢　「何かお疲れね。昨日何処に行って何やらかしてたの？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「あ、いや。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　面白いネタが入ったので天狗の新聞に売り込みをだな……」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#404060);
+	print("　　魔理沙は山に入って神様と戦ったことを隠した。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　実際、後日新聞記事になった。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　――さんざん豪語して神様に負けた、と。");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#308000);
+	print("　　Ending　No.11　　勝てば官軍、負ければ賊軍");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　ノーマル以上でノーコンティニュークリアを目指そう！");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	unknown11();
+	sleep(60);
+
+	unknown14(60);
+	sleep(60);
+
+}

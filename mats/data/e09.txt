@@ -1,0 +1,178 @@
+$MSG_TYPE = TH11_ENDING_MSG
+
+function proc0{
+	load_anm(0, "e09.anm");
+	set_background_image(0, 0, 0);
+	play_bgm("bgm/th10_13.wav");
+	set_text_color(#404060);
+	print("　　妖怪の山。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　河童や天狗など、幻想郷屈指の妖怪軍団が住み着く山。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　山の妖怪達は人間を襲ったりする事は無いのだが、");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　山に入られる事だけは認めず、とたんに排斥しようとする。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　魔理沙はそれを見て味を占め、また入ろうとしていた。");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 1);
+	set_text_color(#4040a0);
+	print("にとり「駄目だって、ここから先は人間が入る場所じゃないからさ」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「まあ、いいじゃん。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　この間だって通してくれたんだし」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「通してくれた？");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　無理矢理通っていったんでしょ？」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#707040);
+	print("魔理沙「神様を懲らしめて欲しいオーラを出していたじゃんか」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「山に入るのなら、それなりの理由が必要だからね。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　手ぶらだったから私が理由を与えてやったのさ」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「じゃあ良いじゃん。今回も同じ理由で……」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「もう理由は無い」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 2);
+	set_text_color(#707040);
+	print("魔理沙「理由が無いって、あの神様は完全には倒していないぜ？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「八坂様なら、もう倒す必要はない。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　我々と和解したの」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「はあ？」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#4040a0);
+	print("にとり「あのお方は、妖怪の山に害をなす為にここに来た訳");
+	print("　　　　ではないと。むしろ利益をもたらす存在だと判断した」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「なんだって？　もう取り込まれたのか？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「元々、妖怪の山は鬼神様の物だった。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　でも鬼が居なくなってから信仰は失われる一方だった」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「その結果、世の中がつまらなくなったのよねぇ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　そこで、新しい神様を歓迎する事になった。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　毎日が神様と宴会で楽しいわよ？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「宴会って……。それは信仰なのか？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#4040a0);
+	print("にとり「親交よ。信仰と親交は全く同じ物。今夜も宴会よ」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#404060);
+	print("　　妖怪の山では神様と妖怪達の親交は上手くいっているようだ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　魔理沙は、何か邪魔者扱いされた気がして、少し寂しかった。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　しかし、麓では人間と妖怪達は上手く親交を結んでいる様に");
+	print("　　思えた。");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	print("　　それは即ち、人間は妖怪を信仰しているのだろうか？");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　魔理沙は神社に戻り、妖怪達を集めて宴会を企画した。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　");
+	set_text_color(#308000);
+	print("　　Ending　No.04　　山の妖怪は自分勝手な奴ばかり");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　　オールクリアおめでとう！　流石だね！");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	unknown11();
+	sleep(60);
+
+	unknown14(60);
+	sleep(60);
+
+	call_staffroll("staff.msg");
+}

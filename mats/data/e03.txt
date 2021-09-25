@@ -1,0 +1,63 @@
+$MSG_TYPE = TH11_ENDING_MSG
+
+function proc0{
+	load_anm(0, "e03.anm");
+	set_background_image(0, 0, 0);
+	play_bgm("bgm/th10_13.wav");
+	set_text_color(#404060);
+	print("　　翌朝の博麗神社。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　結局、神様の力には全く歯が立たなかった魔理沙は");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　天狗達に見つからないように山を下りてきた。");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 1);
+	set_text_color(#804040);
+	print("霊夢　「何かお疲れね。昨日何処に行って何やらかしてたの？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「あ、いや。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　美味しいキュウリ求めて山へだな……」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#404060);
+	print("　　魔理沙は山に入って神様と戦ったことを隠した。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　いい加減な嘘の所為で――");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　美味しいキュウリをお裾分けしないといけなくなった。");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#308000);
+	print("　　Ending　No.10　　嘘はいけません");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　ノーマル以上でノーコンティニュークリアを目指そう！");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	unknown11();
+	sleep(60);
+
+	unknown14(60);
+	sleep(60);
+
+}

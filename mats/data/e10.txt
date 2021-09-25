@@ -1,0 +1,176 @@
+$MSG_TYPE = TH11_ENDING_MSG
+
+function proc0{
+	load_anm(0, "e10.anm");
+	set_background_image(0, 0, 0);
+	play_bgm("bgm/th10_13.wav");
+	set_text_color(#404060);
+	print("　　魔法の森。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　人間も妖怪も近づかない、瘴気に満ちた森。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　魔理沙はここに住んでいた。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　木材を集めて何やら始めようとしているみたいだが……？");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 1);
+	set_text_color(#707040);
+	print("魔理沙「信仰の意味は信仰してない者には判らない……か。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　だったら信仰してみるか。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　自分でちっちゃな神社を造ってみてな」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	print("魔理沙「……そう言えば神社の中身ってどうなってるんだ？");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　博麗神社も中は見せてくれないし……。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　神様が住む場所って事は、");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　ちっちゃな座布団でも入れとけば良いんかな。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　とりあえず、中に入れる神様はこの間の神様で良いや」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_background_image(0, 0, 2);
+	set_text_color(#a04040);
+	print("神奈子「こら！」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「うわ！」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("神奈子「中にそんな汚い座布団なんか入れないの！」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「どっから出てきたんだよ」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#a04040);
+	print("神奈子「私の名前を冠した神社が造られれば、それは分社といって");
+	print("　　　　いつでもその神社に行く事が出来るのです。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　貴方は私の分社を造ろうとしていたみたいですが、");
+	print("　　　　その事は特に構いません。でも、造りが酷い……」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「失礼なやっちゃな」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#a04040);
+	print("神奈子「そもそも、こんな人間が寄りつかない森の中に分社を");
+	print("　　　　造ってどうすると言うのです」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#707040);
+	print("魔理沙「物は試しじゃないか。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　もしかしたら人間が森に来すぎて大変かも知れないぜ？」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("神奈子「ある意味大変でしょうね。参拝する人間が」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#707040);
+	print("魔理沙「だって、あんただって山の上に神社を造っただろ？");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　あんな所人間が近寄れるわけがない」");
+	sleep(1);
+
+	enter_sleep(600);
+	set_text_color(#a04040);
+	print("神奈子「良いのですよ。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　私の目的は山の妖怪の信仰を得る事。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　人間の信仰は、博麗神社で得るつもりだったんだけど……」");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	set_text_color(#404060);
+	print("　　結局、魔理沙は神社を造るのを途中で投げ出してしまった。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　構造がよく判らないのと、造っているはしから神様がやって");
+	print("　　きていちゃもんを付けるからであった。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　結局魔理沙は『信仰の意味が判らない』と神奈子に訊いた。");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	print("　　――すると神奈子はこう言った。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　貴方が魔法に対して感じている思いですよ、と。");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　");
+	set_text_color(#308000);
+	print("　　Ending　No.05　　庭に神社を建てたりするのは良くある話");
+	sleep(1);
+
+	enter_sleep(600);
+	print("　　　　　オールクリアおめでとう！　流石だね！");
+	sleep(1);
+
+	enter_sleep_next_page(600);
+	unknown11();
+	sleep(60);
+
+	unknown14(60);
+	sleep(60);
+
+	call_staffroll("staff.msg");
+}
