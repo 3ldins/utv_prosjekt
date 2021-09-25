@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - player
+  - bullet
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ui
+    uniqueID: 492018861
+    locked: 0
+  - name: player
+    uniqueID: 655332469
+    locked: 0
+  - name: hitbox
+    uniqueID: 511087617
     locked: 0
