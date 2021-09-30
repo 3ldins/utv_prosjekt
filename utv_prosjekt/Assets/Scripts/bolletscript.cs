@@ -7,7 +7,6 @@ public class bolletscript : MonoBehaviour
 
     private BoxCollider2D boxCollider2D;
 
-
     void Start()
     {
         boxCollider2D = GameObject.Find("buileltestop").GetComponent<BoxCollider2D>();

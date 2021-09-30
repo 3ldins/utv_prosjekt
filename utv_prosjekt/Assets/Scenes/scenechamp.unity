@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 148222904}
   - component: {fileID: 148222905}
   - component: {fileID: 148222906}
+  - component: {fileID: 148222907}
   m_Layer: 6
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -289,7 +290,7 @@ Transform:
   m_GameObject: {fileID: 148222898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -3, z: 0.89}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 171744727}
   m_Father: {fileID: 846939745}
@@ -454,6 +455,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.31, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &148222907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148222898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82431f093933a44bb92a29aa367867f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &171744726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1609,7 @@ GameObject:
   - component: {fileID: 1690733557}
   - component: {fileID: 1690733556}
   - component: {fileID: 1690733555}
+  - component: {fileID: 1690733558}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1641,6 +1655,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1690733558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690733554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc6b0eae635f3cb42a7b92df48dba181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleEnemy: {fileID: 2085932820609405488, guid: e8304853403502f45b519d9794c49ecd, type: 3}
 --- !u!1 &1710897402
 GameObject:
   m_ObjectHideFlags: 0
