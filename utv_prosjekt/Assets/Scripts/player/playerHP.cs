@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class playerHP : MonoBehaviour
 {
+
+    public Rigidbody2D rigid;
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,17 +20,22 @@ public class playerHP : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision){
+    void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.tag=="Enemy")
         {
-            Destroy(gameObject);
+            ded();
             Debug.Log("collision detected");
 
         } 
     }
 
-    private void ded()
+    void ded()
     {
         Debug.Log("yep, ded");
+
+        GameManager.IsInputEnabled = false;
+        rigid.constraints = RigidbodyConstraints2D.FreezeAll;
+        animator.Play("dethanimation");
+
     }
 }

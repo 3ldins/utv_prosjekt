@@ -34,13 +34,16 @@ public class playermovement : MonoBehaviour
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
-        if (Input.GetKey (KeyCode.LeftShift))
+        if(GameManager.IsInputEnabled)
         {
-            moveSpeed = 3;
-        }
-        else
-        {
-            moveSpeed = 5;
+            if (Input.GetKey (KeyCode.LeftShift))
+            {
+                moveSpeed = 3;
+            }
+            else
+            {
+                moveSpeed = 5;
+            }
         }
 
     }
