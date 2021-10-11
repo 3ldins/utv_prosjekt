@@ -9,6 +9,12 @@ public class entity : MonoBehaviour
     public AudioClip DeathSound;
     public float DeathVolume;
 
+
+    void Update()
+    {
+
+    }
+
     public void Damage(float Damage)
     {
         HP -= Damage;
