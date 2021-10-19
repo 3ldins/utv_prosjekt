@@ -23,7 +23,7 @@ public class spawnenemies : MonoBehaviour
         for (int t = 0; t < amount; t++)
         {
             yield return new WaitForSeconds(wait);
-            Instantiate(gameObject);
+            var newEnemy = Instantiate(gameObject);
         }
     }
 

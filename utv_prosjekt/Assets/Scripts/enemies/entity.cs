@@ -12,7 +12,10 @@ public class entity : MonoBehaviour
 
     void Update()
     {
-
+        if (HP <= 0)
+        {
+            Die();
+        }
     }
 
     public void Damage(float Damage)
@@ -24,10 +27,20 @@ public class entity : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.tag=="PlayerBullet")
+        {
+            HP = HP - 5.0f;
+            Debug.Log("enemycollision");
+
+        } 
+    }
+
     public virtual void Die()
     {
         Destroy(gameObject);
         PlaySound();
+        Debug.Log("enemy dieded");
     }
 
     public void PlaySound()
