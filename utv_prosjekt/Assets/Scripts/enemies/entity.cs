@@ -9,7 +9,6 @@ public class entity : MonoBehaviour
     public AudioClip DeathSound;
     public float DeathVolume;
 
-
     void Update()
     {
         if (HP <= 0)
@@ -31,7 +30,9 @@ public class entity : MonoBehaviour
         if(collision.gameObject.tag=="PlayerBullet")
         {
             HP = HP - 5.0f;
+            FindObjectOfType<scoretext>().IncreaseScore();
             Debug.Log("enemycollision");
+
 
         } 
     }

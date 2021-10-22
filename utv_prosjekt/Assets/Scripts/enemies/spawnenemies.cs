@@ -5,6 +5,7 @@ using UnityEngine;
 public class spawnenemies : MonoBehaviour
 {
     public GameObject SimpleEnemy;
+    public GameObject SimpleEnemyTWO;
 
     public void Start()
     {
@@ -15,7 +16,26 @@ public class spawnenemies : MonoBehaviour
     {
         yield return new WaitForSeconds(4f);
         StartCoroutine(SpawnSimple(SimpleEnemy, 0.35f, 10));
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(SpawnSimple(SimpleEnemyTWO, 0.35f, 10));
+        yield return new WaitForSeconds(6f);
+        StartCoroutine(SpawnSimple(SimpleEnemy, 0.35f, 10));
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(SpawnSimple(SimpleEnemyTWO, 0.35f, 10));
+        yield return new WaitForSeconds(6f);
+        StartCoroutine(SpawnSimple(SimpleEnemy, 0.35f, 10));
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(SpawnSimple(SimpleEnemyTWO, 0.35f, 10));
+        yield return new WaitForSeconds(6f);
+        StartCoroutine(SpawnSimple(SimpleEnemy, 0.35f, 10));
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(SpawnSimple(SimpleEnemyTWO, 0.35f, 10));
+        yield return new WaitForSeconds(6f);
+        StartCoroutine(SpawnSimple(SimpleEnemy, 0.35f, 10));
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(SpawnSimple(SimpleEnemyTWO, 0.35f, 10));                
         yield return new WaitForSeconds(4f);
+
     }
 
     public IEnumerator SpawnSimple(GameObject gameObject, float wait, int amount)
