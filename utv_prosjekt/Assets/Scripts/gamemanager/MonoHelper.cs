@@ -9,7 +9,6 @@ public class MonoHelper : MonoBehaviour
 
     public void Awake()
     {
-        Application.targetFrameRate = 60;
         if (instance == null)
             instance = this;
         else if (instance != this)

@@ -16,7 +16,6 @@ public class bolletscript : MonoBehaviour
     void Update()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        Debug.Log(rb.velocity.y);
         if(rb.velocity.y==0)
             Destroy(gameObject);
 

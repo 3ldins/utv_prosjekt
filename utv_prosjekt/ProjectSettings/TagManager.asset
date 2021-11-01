@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Muzzle
   - PlayerBullet
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
