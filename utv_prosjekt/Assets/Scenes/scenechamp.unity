@@ -532,7 +532,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148222898}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -565,8 +565,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 148222900}
   animator: {fileID: 148222905}
-  lives: 4
+  lives: 5
   ded: 0
+  PLAYERobj: {fileID: 846939744}
   livesText: {fileID: 0}
 --- !u!1 &171744726
 GameObject:
@@ -1267,7 +1268,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846939744}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69ac9f60265cc3847a9de496f683fc19, type: 3}
   m_Name: 

@@ -10,6 +10,8 @@ public class playerHP : MonoBehaviour
     public Animator animator;
     public int lives = 5;
     public bool ded = false;
+    public GameObject PLAYERobj;
+
     [SerializeField] TextMeshProUGUI livesText;
 
     // Start is called before the first frame update
@@ -17,21 +19,22 @@ public class playerHP : MonoBehaviour
     {
         livesText = GameObject.Find("floatLIVES").GetComponent<TextMeshProUGUI>();
         livesText.text = lives.ToString();
-
+        animator.Play("playernewlife");
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log(lives);
     }
 
     void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.tag=="Enemy" && !ded)
         {
             lives -= 1;
-
+            PLAYERobj.GetComponent<Animator> ().Play ("playernewlifeTEST");
+            Debug.Log("respawn");
 
 
             if (lives <= 0){
