@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class playerHP : MonoBehaviour
@@ -11,6 +12,8 @@ public class playerHP : MonoBehaviour
     public int lives = 5;
     public bool ded = false;
     public GameObject PLAYERobj;
+    public string gameover;
+
 
     [SerializeField] TextMeshProUGUI livesText;
 
@@ -54,6 +57,8 @@ public class playerHP : MonoBehaviour
         animator.Play("dethanimation");
         ded = true;
         lives = 0;
+        SceneManager.LoadScene(gameover);
+        
 
         GameManager.IsInputEnabled = false;
         rigid.constraints = RigidbodyConstraints2D.FreezeAll;

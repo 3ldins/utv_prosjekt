@@ -568,6 +568,7 @@ MonoBehaviour:
   lives: 5
   ded: 0
   PLAYERobj: {fileID: 846939744}
+  gameover: gameover
   livesText: {fileID: 0}
 --- !u!1 &171744726
 GameObject:
