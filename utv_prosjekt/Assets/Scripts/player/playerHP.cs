@@ -9,10 +9,14 @@ public class playerHP : MonoBehaviour
 
     public Rigidbody2D rigid;
     public Animator animator;
-    public int lives = 5;
+    public int lives = 100;
     public bool ded = false;
     public GameObject PLAYERobj;
     public string gameover;
+    GameObject gameObjectToMove;
+
+
+
 
 
     [SerializeField] TextMeshProUGUI livesText;
@@ -30,23 +34,50 @@ public class playerHP : MonoBehaviour
     void Update()
     {
         //Debug.Log(lives);
+//        if (lives == 4){
+//            transform.position = new Vector3(0.04f,-7.23f,0.89f);
+//            animator.Play("playernewlife2");
+//        }
+//        if (lives == 3){
+//            transform.position = new Vector3(0.04f,-7.23f,0.89f);
+//            animator.Play("playernewlife3");
+//        }
+//        if (lives == 2){
+//            transform.position = new Vector3(0.04f,-7.23f,0.89f);
+//            animator.Play("playernewlife4");
+//        }
+//        if (lives == 1){
+//            transform.position = new Vector3(0.04f,-7.23f,0.89f);
+//            animator.Play("playernewlife5");
+//        }
+
+
+
     }
 
     void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.tag=="Enemy" && !ded)
         {
-            lives -= 1;
-            PLAYERobj.GetComponent<Animator> ().Play ("playernewlifeTEST");
-            Debug.Log("respawn");
+            //animator.Play("dethanimation");
+            //animator.enabled = false;
+            //gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            //Destroy( gameObject, 1 );
+
+            
+            lives -= 5;
+            //PLAYERobj.GetComponent<Animator> ().Play ("playernewlifeTEST");
+            //Debug.Log("respawn");
 
 
-            if (lives <= 0){
+            if (lives == 0){
                 Ded();
-            }
-            Debug.Log("collision detected");
-            livesText.text = lives.ToString();
-            animator.Play("dethanimation");
+        
+                GameManager.IsInputEnabled = false;
+            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
 
+            }
+            livesText.text = lives.ToString();
+            
 
         } 
     }
@@ -54,15 +85,23 @@ public class playerHP : MonoBehaviour
     void Ded()
     {
         Debug.Log("yep, ded");
-        animator.Play("dethanimation");
         ded = true;
         lives = 0;
+        animator.Play("dethanimation");
+        animator.enabled = false;
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+        StartCoroutine(ExampleCoroutine());
+
+
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(gameover);
         
-
-        GameManager.IsInputEnabled = false;
-        rigid.constraints = RigidbodyConstraints2D.FreezeAll;
-
 
     }
 

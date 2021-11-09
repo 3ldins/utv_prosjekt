@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class MAINmenu : MonoBehaviour
 {
     public string startscene;
+	public Color loadToColor = Color.white;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,9 @@ public class MAINmenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(startscene);
+        Initiate.Fade(startscene, loadToColor, 0.75f);
+
+        
     }
 
     public void OpenOptions()

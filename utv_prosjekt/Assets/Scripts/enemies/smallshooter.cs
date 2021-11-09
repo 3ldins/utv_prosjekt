@@ -34,4 +34,6 @@ public class smallshooter : MonoBehaviour
         }
     }
 
+    
+
 }

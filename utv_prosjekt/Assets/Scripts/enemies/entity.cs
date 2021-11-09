@@ -35,7 +35,12 @@ public class entity : MonoBehaviour
 
 
         } 
-    }
+        if(collision.gameObject.tag=="Player")
+        {
+            Destroy (gameObject);
+        }
+ }
+
 
     public virtual void Die()
     {
