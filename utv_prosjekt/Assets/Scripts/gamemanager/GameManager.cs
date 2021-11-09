@@ -6,13 +6,28 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    public static bool IsInputEnabled = true;
+    public static bool IsInputEnabled = false;
 
 
     // Start is called before the first frame update
     void Awake()
     {
         Application.targetFrameRate = 60;
+
+
+    }
+
+    void Start()
+    {
+        StartCoroutine(ExampleCoroutine());
+        GameManager.IsInputEnabled = false;
+
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(1.3f);
+        GameManager.IsInputEnabled = true;
 
     }
 

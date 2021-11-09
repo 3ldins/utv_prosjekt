@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -570,8 +570,6 @@ MonoBehaviour:
   ded: 0
   PLAYERobj: {fileID: 846939744}
   gameover: gameover
-  gameoverscene: gameover
-  loadToColor: {r: 1, g: 1, b: 1, a: 1}
   livesText: {fileID: 0}
 --- !u!1 &171744726
 GameObject:
