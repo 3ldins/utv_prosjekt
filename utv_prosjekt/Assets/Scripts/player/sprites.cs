@@ -10,6 +10,9 @@ public class sprites : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.IsInputEnabled == true)
+        {
         animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+        }
     }
 }

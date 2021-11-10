@@ -15,7 +15,12 @@ public class playermovement : MonoBehaviour
     // så denne bruker jeg til input registrering.
     void Update()
     {
-        ProcessInputs();
+        if(GameManager.IsInputEnabled == true)
+        {
+            ProcessInputs();
+        }
+        Debug.Log(GameManager.IsInputEnabled);
+        
     }
 
 
@@ -23,7 +28,10 @@ public class playermovement : MonoBehaviour
     // slik at fps ikke kan påvirke farten
     void FixedUpdate() 
     {
+        if(GameManager.IsInputEnabled == true)
+        {        
         Move();
+        }
     }
 
 
@@ -34,8 +42,7 @@ public class playermovement : MonoBehaviour
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
-        if(GameManager.IsInputEnabled)
-        {
+
             if (Input.GetKey (KeyCode.LeftShift))
             {
                 moveSpeed = 3;
@@ -44,7 +51,7 @@ public class playermovement : MonoBehaviour
             {
                 moveSpeed = 5;
             }
-        }
+        
 
     }
 
