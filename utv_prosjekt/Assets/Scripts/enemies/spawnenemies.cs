@@ -6,6 +6,9 @@ public class spawnenemies : MonoBehaviour
 {
     public GameObject SimpleEnemy;
     public GameObject SimpleEnemyTWO;
+    public GameObject SecondEnemy;
+    public GameObject SecondEnemyTWO;
+
 
     public void Start()
     {
@@ -19,9 +22,9 @@ public class spawnenemies : MonoBehaviour
         yield return new WaitForSeconds(1f);
         StartCoroutine(SpawnSimple(SimpleEnemyTWO, 0.35f, 10));
         yield return new WaitForSeconds(6f);
-        StartCoroutine(SpawnSimple(SimpleEnemy, 0.35f, 10));
+        StartCoroutine(SpawnSimple(SecondEnemy, 0.35f, 10));
         yield return new WaitForSeconds(1f);
-        StartCoroutine(SpawnSimple(SimpleEnemyTWO, 0.35f, 10));
+        StartCoroutine(SpawnSimple(SecondEnemyTWO, 0.35f, 10));
         yield return new WaitForSeconds(6f);
         StartCoroutine(SpawnSimple(SimpleEnemy, 0.35f, 10));
         yield return new WaitForSeconds(1f);

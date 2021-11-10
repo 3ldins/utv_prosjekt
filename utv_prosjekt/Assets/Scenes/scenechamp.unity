@@ -570,8 +570,6 @@ MonoBehaviour:
   ded: 0
   PLAYERobj: {fileID: 846939744}
   gameover: gameover
-  gameoverscene: gameover
-  loadToColor: {r: 1, g: 1, b: 1, a: 1}
   livesText: {fileID: 0}
 --- !u!1 &171744726
 GameObject:
@@ -2280,6 +2278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleEnemy: {fileID: 2085932820609405488, guid: e8304853403502f45b519d9794c49ecd, type: 3}
   SimpleEnemyTWO: {fileID: 4882731940086203121, guid: 7c718d736cdda034b895ea45137b8307, type: 3}
+  SecondEnemy: {fileID: 2085932820609405488, guid: 8a5d5a0a71f01cf40b7a521d20d0f1bb, type: 3}
+  SecondEnemyTWO: {fileID: 2085932820609405488, guid: c5c11daf031175e40aab9c2c540130ef, type: 3}
 --- !u!114 &1690733559
 MonoBehaviour:
   m_ObjectHideFlags: 0
