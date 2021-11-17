@@ -19,7 +19,6 @@ public class playermovement : MonoBehaviour
         {
             ProcessInputs();
         }
-        Debug.Log(GameManager.IsInputEnabled);
         
     }
 
