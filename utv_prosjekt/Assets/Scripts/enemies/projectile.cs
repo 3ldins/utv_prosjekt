@@ -26,6 +26,9 @@ public class projectile : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();        
         if(rb.position.y<-6)
             Destroy(gameObject);
+        
+        if(rb.position.y>6)
+            Destroy(gameObject);
        //if(transform.position.x == target.x && transform.position.y == target.y)
        //{
        //    DestroyProjectile();

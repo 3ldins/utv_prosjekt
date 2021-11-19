@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MAINmenu : MonoBehaviour
 {
     public string startscene;
+    public string settings;
 	public Color loadToColor = Color.white;
+    public TextMeshProUGUI loadingtext;
 
 
     // Start is called before the first frame update
@@ -25,18 +28,13 @@ public class MAINmenu : MonoBehaviour
     public void StartGame()
     {
         Initiate.Fade(startscene, loadToColor, 0.75f);
-
+        loadingtext.text = "loading...";
         
     }
 
     public void OpenOptions()
     {
-
-    }
-
-    public void CloseOptions()
-    {
-
+        SceneManager.LoadScene(settings);
     }
 
     public void QuitGame()

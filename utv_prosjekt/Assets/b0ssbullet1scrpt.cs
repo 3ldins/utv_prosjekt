@@ -21,6 +21,13 @@ public class b0ssbullet1scrpt : MonoBehaviour
     void Update()
     {
         transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
+    
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();        
+        //if(rb.position.y<-6)
+            //Destroy(gameObject);
+        
+        //if(rb.position.y>6)
+            //Destroy(gameObject);        
     }
 
     public void SetMoveDirection(Vector2 dir)
@@ -37,5 +44,11 @@ public class b0ssbullet1scrpt : MonoBehaviour
     {
         CancelInvoke();
     }
-    
+
+    void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.tag=="Player")
+        {
+            gameObject.SetActive(false);
+        }
+ }
 }

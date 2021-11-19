@@ -37,7 +37,7 @@ public class healthbar : MonoBehaviour
         }    
     }
     IEnumerator Reset() {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(25);
         GameObject thePlayer = GameObject.Find("b0ss(Clone)");
         bossoneHP playerScript = thePlayer.GetComponent<bossoneHP>();
         health = playerScript.HP;
