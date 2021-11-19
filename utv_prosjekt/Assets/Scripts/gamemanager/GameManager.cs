@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static bool IsInputEnabled = false;
+    public GameObject pasuemenu;
 
 
     // Start is called before the first frame update
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(ExampleCoroutine());
         GameManager.IsInputEnabled = false;
+        pasuemenu.SetActive(false);
+        Time.timeScale = 1f;
 
     }
 
@@ -36,6 +39,15 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R))
         SceneManager.LoadScene(1);
+        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        Pause();
 
+    }
+
+    void Pause()
+    {
+        pasuemenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 }

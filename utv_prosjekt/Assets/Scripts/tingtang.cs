@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
  public class tingtang : MonoBehaviour {
-     GameObject lastselect;
+    GameObject lastselect;
+
+
      void Start()
      {
          lastselect = new GameObject();
+
      }
      // Update is called once per frame
      void Update () {         
