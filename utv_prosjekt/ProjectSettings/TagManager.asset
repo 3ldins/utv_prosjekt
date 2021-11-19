@@ -8,6 +8,7 @@ TagManager:
   - Muzzle
   - PlayerBullet
   - EnemyBullet
+  - Border
   layers:
   - Default
   - TransparentFX

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: utv prosjekt yep
+  m_text: zamn warrior
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cff1a6c8b6e53cf43a2f3e3b866a6769, type: 2}
   m_sharedMaterial: {fileID: -3893183853649256755, guid: cff1a6c8b6e53cf43a2f3e3b866a6769, type: 2}
@@ -1485,6 +1485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startscene: scenechamp
+  loadToColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2056755084
 GameObject:
   m_ObjectHideFlags: 0

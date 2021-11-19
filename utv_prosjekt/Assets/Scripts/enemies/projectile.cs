@@ -22,7 +22,10 @@ public class projectile : MonoBehaviour
     void Update()
     {
         transform.position += movementVector * Time.deltaTime;
-
+        
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();        
+        if(rb.position.y<-6)
+            Destroy(gameObject);
        //if(transform.position.x == target.x && transform.position.y == target.y)
        //{
        //    DestroyProjectile();

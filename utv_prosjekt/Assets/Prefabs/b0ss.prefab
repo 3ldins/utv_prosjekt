@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80329fbaa8c448b49868f300fb7d004b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
+  HP: 300
   DeathSound: {fileID: 0}
   DeathVolume: 0
 --- !u!114 &-2618943970845091595
@@ -172,3 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38e8f643ce595641bad340f36853166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletsAmount: 10
+  startAngle: 90
+  endAngle: 270

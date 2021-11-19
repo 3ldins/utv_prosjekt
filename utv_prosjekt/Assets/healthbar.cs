@@ -7,7 +7,7 @@ public class healthbar : MonoBehaviour
 {
 
     Image healthBar;
-    float maxHealth = 100f;
+    float maxHealth = 300f;
     float health;
     
 
@@ -22,19 +22,26 @@ public class healthbar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject thePlayer = GameObject.Find("b0ss(Clone)");
-        bossoneHP playerScript = thePlayer.GetComponent<bossoneHP>();
-        health = playerScript.HP;
-        if(health == 99)
+        StartCoroutine("Reset");
+        if(health == 299)
         {
             healthBar.fillAmount = 1;
         }
-        if(health < 99)
+        if(health < 299)
         {
             healthBar.fillAmount = health / maxHealth;        
         }
         if (health == 0)
         {
             Destroy(gameObject);
-        }    }
+        }    
+    }
+    IEnumerator Reset() {
+        yield return new WaitForSeconds(3);
+        GameObject thePlayer = GameObject.Find("b0ss(Clone)");
+        bossoneHP playerScript = thePlayer.GetComponent<bossoneHP>();
+        health = playerScript.HP;
+        
+
+    } 
 }
