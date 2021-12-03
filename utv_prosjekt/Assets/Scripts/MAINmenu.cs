@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.Audio;
 
 public class MAINmenu : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class MAINmenu : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        AudioListener.pause = false;
     }
 
     // Update is called once per frame

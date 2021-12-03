@@ -29,6 +29,7 @@ public class pausemenu : MonoBehaviour
     {
         pausemenutwo.SetActive(false);
         Time.timeScale = 1f;
+        AudioListener.pause = false;
     }
 
     public void restart()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         GameManager.IsInputEnabled = false;
         pasuemenu.SetActive(false);
         Time.timeScale = 1f;
+        AudioListener.pause = false;
 
     }
 
@@ -43,11 +45,13 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         Pause();
 
+
     }
 
     void Pause()
     {
         pasuemenu.SetActive(true);
         Time.timeScale = 0f;
+        AudioListener.pause = true;
     }
 }
