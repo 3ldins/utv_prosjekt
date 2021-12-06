@@ -8,6 +8,7 @@ public class spawnenemies : MonoBehaviour
     public GameObject SimpleEnemyTWO;
     public GameObject SecondEnemy;
     public GameObject SecondEnemyTWO;
+    public GameObject EnemyTHREE;
     public GameObject BossOne;
 
 
@@ -30,6 +31,10 @@ public class spawnenemies : MonoBehaviour
         yield return new WaitForSeconds(1f);
         StartCoroutine(SpawnSimple(SimpleEnemyTWO, 0.35f, 10));              
         yield return new WaitForSeconds(8f);
+        StartCoroutine(SpawnSimple(EnemyTHREE, 0.35f, 10));
+        yield return new WaitForSeconds(10f);
+        StartCoroutine(SpawnSimple(EnemyTHREE, 0.35f, 10));
+        yield return new WaitForSeconds(10f);
         StartCoroutine(SpawnSimple(BossOne, 0.35f, 1));                
 
     }
