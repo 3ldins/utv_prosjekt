@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38e8f643ce595641bad340f36853166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletsAmount: 10
-  startAngle: 90
+  bulletsAmount: 30
+  bulletsAmount2: 20
+  startAngle: -90
   endAngle: 270

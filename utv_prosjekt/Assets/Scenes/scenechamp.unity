@@ -2987,6 +2987,9 @@ MonoBehaviour:
   SecondEnemy: {fileID: 2085932820609405488, guid: 8a5d5a0a71f01cf40b7a521d20d0f1bb, type: 3}
   SecondEnemyTWO: {fileID: 2085932820609405488, guid: c5c11daf031175e40aab9c2c540130ef, type: 3}
   EnemyTHREE: {fileID: 5730587569236197119, guid: 3aa98c8d187acbf4983b7eebdb7ea9d5, type: 3}
+  EnemyThreeTwo: {fileID: 5730587569236197119, guid: e6fd32cc561134e4ebf9f48d22b9c49f, type: 3}
+  leftEnemyTHREE: {fileID: 5730587569236197119, guid: 77b2bc1bb9e27c242aa2c3918d898938, type: 3}
+  leftEnemyThreeTwo: {fileID: 5730587569236197119, guid: 5e91e007dc36bfa4daeac6fab3b8b6f2, type: 3}
   BossOne: {fileID: 8451058690005570970, guid: 2ab00bc1c49457542b4665dd8d8917a1, type: 3}
 --- !u!114 &1690733559
 MonoBehaviour:
@@ -3262,7 +3265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1891001099}
   - component: {fileID: 1891001100}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: playerboundaries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3301,7 +3304,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 564.4342}
+  m_Offset: {x: 0, y: 563.7657}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3312,7 +3315,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1000, y: 127.87506}
+  m_Size: {x: 1000, y: 129.21207}
   m_EdgeRadius: 0
 --- !u!1 &1912470381
 GameObject:
