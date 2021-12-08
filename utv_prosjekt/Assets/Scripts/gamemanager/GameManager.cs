@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     public static bool IsInputEnabled = false;
     public GameObject pasuemenu;
+    public string winnerscene;
+    private GameObject scriptholder;
+    public float hpFLoat;
 
 
     // Start is called before the first frame update
@@ -45,8 +48,24 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         Pause();
 
+        scriptholder = GameObject.FindGameObjectWithTag("Enemy");
+    	hpFLoat = scriptholder.GetComponent<bossoneHP>().HP;
 
+
+        if (hpFLoat <= 0)
+        {
+            StartCoroutine(LoadEnding());
+        }
     }
+
+    IEnumerator LoadEnding()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(winnerscene);
+        Debug.Log("ending");
+        
+    }
+
 
     void Pause()
     {

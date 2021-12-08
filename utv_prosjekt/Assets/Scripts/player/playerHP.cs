@@ -14,6 +14,9 @@ public class playerHP : MonoBehaviour
     public GameObject PLAYERobj;
     public string gameover;
     GameObject gameObjectToMove;
+    public AudioSource audioHIT;
+    public float DeathVolume;
+    public AudioClip DeathSound;
 
 
 
@@ -65,6 +68,8 @@ public class playerHP : MonoBehaviour
 
             
             lives -= 5;
+            audioHIT.Play(0);
+        
             //PLAYERobj.GetComponent<Animator> ().Play ("playernewlifeTEST");
             //Debug.Log("respawn");
 
@@ -84,6 +89,7 @@ public class playerHP : MonoBehaviour
 
     void Ded()
     {
+        PlaySound();        
         Debug.Log("yep, ded");
         ded = true;
         lives = 0;
@@ -94,6 +100,23 @@ public class playerHP : MonoBehaviour
         StartCoroutine(ExampleCoroutine());
 
 
+    }
+
+    public void PlaySound()
+    {
+        if (DeathSound == null) return;
+        GameObject newAC = new GameObject();
+        AudioSource audioSource = newAC.AddComponent<AudioSource>();
+        audioSource.volume = DeathVolume;
+        audioSource.PlayOneShot(DeathSound);
+        StartCoroutine(DestroyOverSeconds(DeathSound.length + 0.1f, newAC));
+        DontDestroyOnLoad(newAC);
+    }
+
+    public IEnumerator DestroyOverSeconds(float time, GameObject go)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(go);
     }
 
     IEnumerator ExampleCoroutine()

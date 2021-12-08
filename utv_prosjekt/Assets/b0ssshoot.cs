@@ -8,6 +8,9 @@ public class b0ssshoot : MonoBehaviour
     private int bulletsAmount = 10;
     [SerializeField]    
     private int bulletsAmount2 = 10;
+
+    public AudioSource shootAudio;
+
     
 
 
@@ -26,6 +29,8 @@ public class b0ssshoot : MonoBehaviour
 
     private void Fire()
     {
+        shootAudio.Play(0);
+        
         float angleStep = (endAngle - startAngle) / bulletsAmount;
         float angle = startAngle;
 
@@ -49,6 +54,8 @@ public class b0ssshoot : MonoBehaviour
 
     private void Fire2()
     {
+        shootAudio.Play(0);
+                
         float angleStep = (endAngle - startAngle) / bulletsAmount2;
         float angle = startAngle;
 

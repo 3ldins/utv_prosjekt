@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
-  DeathSound: {fileID: 0}
-  DeathVolume: 0
+  DeathSound: {fileID: 8300000, guid: 96561d48f1c38f541abb9c08102a367e, type: 3}
+  DeathVolume: 0.1
 --- !u!114 &-3451988600545465530
 MonoBehaviour:
   m_ObjectHideFlags: 0

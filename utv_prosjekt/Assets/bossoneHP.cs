@@ -8,6 +8,8 @@ public class bossoneHP : MonoBehaviour
     public float HP = 100.0f;
     public AudioClip DeathSound;
     public float DeathVolume;
+    public AudioSource audioData;
+ 
 
     void Start()
     {
@@ -35,6 +37,7 @@ public class bossoneHP : MonoBehaviour
         if(collision.gameObject.tag=="PlayerBullet")
         {
             HP = HP - 1.0f;
+            audioData.Play(0);
             FindObjectOfType<scoretext>().IncreaseScore();
             //Debug.Log("enemycollision");
 

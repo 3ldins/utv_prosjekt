@@ -41,7 +41,7 @@ public class spawnenemies : MonoBehaviour
         StartCoroutine(SpawnSimple(leftEnemyTHREE, 0.35f, 10));
         yield return new WaitForSeconds(0.2f);
         StartCoroutine(SpawnSimple(leftEnemyThreeTwo, 0.35f, 10));              
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(8f);
         StartCoroutine(SpawnSimple(BossOne, 0.35f, 1));                
 
     }
