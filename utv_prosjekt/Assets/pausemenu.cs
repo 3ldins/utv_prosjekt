@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
+
 
 public class pausemenu : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class pausemenu : MonoBehaviour
     public GameObject pausemenutwo;
     public string startscene;
     public string game;
+    [SerializeField] private VideoPlayer videoPlayer;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +34,8 @@ public class pausemenu : MonoBehaviour
         pausemenutwo.SetActive(false);
         Time.timeScale = 1f;
         AudioListener.pause = false;
+        videoPlayer.Play();
+    
     }
 
     public void restart()

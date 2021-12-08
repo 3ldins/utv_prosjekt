@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
- public class tingtang : MonoBehaviour {
+ public class mousedisabler : MonoBehaviour {
     GameObject lastselect;
 
 
