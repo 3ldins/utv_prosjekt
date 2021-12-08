@@ -28,7 +28,7 @@ public class projectile : MonoBehaviour
             Destroy(gameObject);
         
         if(rb.position.y>6)
-            Destroy(gameObject);
+            Destroy(gameObject); //sletter fienden sitt skudd dersom den går out of bounds, dette er for optimalizations
        //if(transform.position.x == target.x && transform.position.y == target.y)
        //{
        //    DestroyProjectile();

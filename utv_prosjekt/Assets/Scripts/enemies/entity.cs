@@ -9,7 +9,7 @@ public class entity : MonoBehaviour
     public AudioClip DeathSound;
     public float DeathVolume;
 
-    void Update()
+    void Update() //hele dette skriptet er ganske likt bossoneHP
     {
         if (HP <= 0)
         {

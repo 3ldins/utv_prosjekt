@@ -9,24 +9,18 @@ public class bossoneHP : MonoBehaviour
     public AudioClip DeathSound;
     public float DeathVolume;
     public AudioSource audioData;
- 
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
         if (HP <= 0)
         {
-            Die();
+            Die(); //dersom HP er 0 eller mindre så kjører "Die" skriptet
         }
     }
 
     public void Damage(float Damage)
     {
-        HP -= Damage;
+        HP -= Damage; //Når bossen får Damage så subtraherer jeg HP med Damage floaten til playerskuddet.
         if (HP <= 0)
         {
             Die();
@@ -40,24 +34,19 @@ public class bossoneHP : MonoBehaviour
             audioData.Play(0);
             FindObjectOfType<scoretext>().IncreaseScore();
             //Debug.Log("enemycollision");
-
-
         } 
-        if(collision.gameObject.tag=="Player")
-        {
-            Destroy (gameObject);
-        }
+
  }
 
 
     public virtual void Die()
     {
-        Destroy(gameObject);
-        PlaySound();
+        Destroy(gameObject); //sletter bossen
+        PlaySound(); //spiller av defeat lyden
         Debug.Log("enemy dieded");
     }
 
-    public void PlaySound()
+    public void PlaySound() //skriptet til lyden som spilles av når bossen er defeated.
     {
         if (DeathSound == null) return;
         GameObject newAC = new GameObject();

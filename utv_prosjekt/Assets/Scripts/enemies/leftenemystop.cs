@@ -13,7 +13,7 @@ public class leftenemystop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        Rigidbody2D rb = GetComponent<Rigidbody2D>(); //sletter fienden dersom den går out of bounds
         if(rb.position.x>4.5)
             Destroy(gameObject);
     }

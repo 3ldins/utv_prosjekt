@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1027,6 +1027,7 @@ GameObject:
   - component: {fileID: 305058635}
   - component: {fileID: 305058634}
   - component: {fileID: 305058639}
+  - component: {fileID: 305058640}
   m_Layer: 0
   m_Name: bgvid
   m_TagString: Untagged
@@ -1241,6 +1242,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &305058640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305058633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49fbdb06361f774ead8843c7c03af3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 305058634}
 --- !u!1 &366039558
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2372,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.57299, y: -3.0875888}
+  m_Offset: {x: -2.57299, y: -5.8847833}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2369,7 +2383,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.125962, y: 0.9336004}
+  m_Size: {x: 11.125962, y: 0.5135546}
   m_EdgeRadius: 0
 --- !u!4 &1134741768
 Transform:
@@ -3357,6 +3371,7 @@ MonoBehaviour:
   pausemenutwo: {fileID: 1847972991}
   startscene: tittelskjerm
   game: scenechamp
+  videoPlayer: {fileID: 305058634}
 --- !u!1 &1891001098
 GameObject:
   m_ObjectHideFlags: 0

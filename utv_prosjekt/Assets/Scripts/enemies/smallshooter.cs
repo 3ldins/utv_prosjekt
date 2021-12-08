@@ -9,15 +9,15 @@ public class smallshooter : MonoBehaviour
     public float startTimeBtwShots;
 
     public GameObject projectile;
-    private Transform player; //where we want to shoot(player? mouse?)
+    private Transform player;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform; //finner spilleren
 
-        timeBtwShots = startTimeBtwShots;
+        timeBtwShots = startTimeBtwShots; //bestemmer hvor fort fienden skyter
     }
 
     // Update is called once per frame

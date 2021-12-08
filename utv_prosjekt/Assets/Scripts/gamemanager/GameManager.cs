@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 60; //limit FPS til 60
 
 
     }
@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(ExampleCoroutine());
-        GameManager.IsInputEnabled = false;
-        pasuemenu.SetActive(false);
+        GameManager.IsInputEnabled = false; //skrur av player input mens start animasjonen spiller
+        pasuemenu.SetActive(false); 
         Time.timeScale = 1f;
         AudioListener.pause = false;
 
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     IEnumerator ExampleCoroutine()
     {
         yield return new WaitForSeconds(1.3f);
-        GameManager.IsInputEnabled = true;
+        GameManager.IsInputEnabled = true; //starter player input igjen etter animasjonen er ferdig
 
     }
 
